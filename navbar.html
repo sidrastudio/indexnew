@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        background-color: rgb(167, 238, 134);
+    }
+</style>
+   
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="btn btn-dark" id="menuToggle" aria-label="Toggle menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand ms-3" href="#">MyWebsite</a>
+  </div>
+</nav>
+
+<!-- Side Navbar -->
+<div id="sideNav" class="side-nav bg-dark">
+  <ul class="nav flex-column p-3">
+    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-white" href="#cards">Cards</a></li>
+    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+    <li class="nav-item"><a class="nav-link text-white" href="#info">Info</a></li>
+  </ul>
+</div>
+
+<!-- Overlay to close sideNav -->
+<div id="overlay"></div>
+
+<script>
+  const sideNav = document.getElementById('sideNav');
+  const overlay = document.getElementById('overlay');
+  const menuToggle = document.getElementById('menuToggle');
+
+  menuToggle.addEventListener('click', () => {
+    sideNav.classList.toggle('open');
+    overlay.classList.toggle('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    sideNav.classList.remove('open');
+    overlay.classList.remove('show');
+  });
+</script>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>CONNECT WITH NATURE HERE</p>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="container my-5">
+        <h1 class="text-center mb-4">Our Cards</h1>
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Image option -->
+                    <img src="../img/3.jpeg" class="card-img-top" alt="Card One Image" height="300">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card One</h5>
+                        <p class="card-text">
+                            This is a simple card description. You can put any content here.
+                        </p>
+                        
+
+                        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+
+        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Image option -->
+                    <img src="../img/2.jpeg" class="card-img-top" alt="Card Two Image" height="300px">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card Two</h5>
+                        <p class="card-text">
+                            Cards are great for displaying content like products or services.
+                        </p>
+                        
+
+                        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Image option -->
+                    <img src="../img/1.jpeg" class="card-img-top" alt="Card Three Image" height="300">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card Three</h5>
+                        <p class="card-text">
+                            This layout is responsive and works on mobile devices too.
+                        </p>
+                        
+
+                        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Card 4-->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Image option -->
+                    <img src="../img/11.jpeg" class="card-img-top" alt="Card Two Image" height="300px">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card Two</h5>
+                        <p class="card-text">
+                            Cards are great for displaying content like products or services.
+                        </p>
+                        
+
+                        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+               <!-- Card 5-->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Image option -->
+                    <img src="../img/16.jpeg" class="card-img-top" alt="Card Two Image" height="300px">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card Two</h5>
+                        <p class="card-text">
+                            Cards are great for displaying content like products or services.
+                        </p>
+                        
+                        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+               <!-- Card 6-->
+            <div class="col-md-4">
+                <div class="card h-100">
+    <img src="../img/13.avif" class="card-img-top" alt="Card Image" height="300px">
+    <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+            This is a short description of the card.
+        </p>
+
+        <!-- Read More Button -->
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#extraText1" role="button" aria-expanded="false" aria-controls="extraText1">
+            Read More
+        </a>
+
+        <!-- Hidden Paragraph -->
+        <div class="collapse mt-2" id="extraText1">
+            <p>
+                This is the extra paragraph text that appears when you click "Read More". 
+                You can add multiple sentences here.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Image Slider -->
+    <section class="container my-5">
+        <h1>wild life slides</h1>
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../img/20.jpg" class="d-block w-100" alt="Slide 1" height="400" width="300">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, temporibus. Repellendus laboriosam maxime dicta ea ipsa aut dignissimos sequi laudantium enim nemo, in qui, doloribus iste debitis quibusdam deleniti magnam.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/22.jpg" class="d-block w-100" alt="Slide 2"  height="400" width="300" >
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ratione esse explicabo doloremque impedit aliquam eius ipsum. Iure ad id consequatur sit dolor eveniet magnam. Odio sequi eaque excepturi quod.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/21.jpg" class="d-block w-100" alt="Slide 3"  height="400" width="300">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate consectetur atque tempora sit dignissimos non ipsum reprehenderit totam? Sed accusamus illo itaque modi voluptate quod ea id qui ipsam recusandae.</p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Form Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- Info Section -->
+<section id="info" class="container my-5 text-center">
+    <h2 class="mb-4">Info Section</h2>
+    
+    <!-- Single Round Image -->
+    <img src="img/22.jpg" alt="Info Image" class="info-img mb-4">
+
+    <!-- Info Text -->
+    <h5>About Our Website</h5>
+    <p>
+        Welcome to our website! We provide top-notch services and high-quality content. 
+        Our goal is to give you the best experience with modern design and responsive layout.
+    </p>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
